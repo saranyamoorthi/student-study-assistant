@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegis Study AI - Your Ultimate Student Assistant</title>
+    <title>AI Student Study Assistant</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="app-container">
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="sidebar-brand">
                 <div class="brand-logo">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                     </svg>
                 </div>
-                <h2>Aegis AI</h2>
+                <h2>AI Assistant</h2>
             </div>
-            
+
             <nav class="sidebar-nav">
                 <button class="nav-item active" data-tab="dashboard">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -35,40 +40,40 @@
                 </button>
                 <button class="nav-item" data-tab="ai-explainer">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                     </svg>
                     <span>Concept Explainer</span>
                 </button>
                 <button class="nav-item" data-tab="study-planner">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                        <line x1="16" y1="2" x2="16" y2="6"/>
-                        <line x1="8" y1="2" x2="8" y2="6"/>
-                        <line x1="3" y1="10" x2="21" y2="10"/>
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
                     </svg>
                     <span>Study Planner</span>
                 </button>
                 <button class="nav-item" data-tab="notes-summarizer">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14 2 14 8 20 8"/>
-                        <line x1="16" y1="13" x2="8" y2="13"/>
-                        <line x1="16" y1="17" x2="8" y2="17"/>
-                        <polyline points="10 9 9 9 8 9"/>
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
                     </svg>
                     <span>Notes Summarizer</span>
                 </button>
                 <button class="nav-item" data-tab="quiz-arena">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="8" r="7"/>
-                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        <circle cx="12" cy="8" r="7" />
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
                     </svg>
                     <span>Quiz Arena</span>
                 </button>
                 <button class="nav-item" data-tab="resource-hub">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                        <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2-2.5v-15z"/>
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                        <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2-2.5v-15z" />
                     </svg>
                     <span>Resources</span>
                 </button>
@@ -77,18 +82,18 @@
             <div class="sidebar-footer">
                 <button id="theme-toggle" class="theme-btn">
                     <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"/>
-                        <line x1="12" y1="1" x2="12" y2="3"/>
-                        <line x1="12" y1="21" x2="12" y2="23"/>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                        <line x1="1" y1="12" x2="3" y2="12"/>
-                        <line x1="21" y1="12" x2="23" y2="12"/>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                     </svg>
                     <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                     </svg>
                     <span id="theme-text">Light Mode</span>
                 </button>
@@ -100,10 +105,10 @@
             <!-- App Header -->
             <header class="app-header">
                 <div class="header-welcome">
-                    <h1 id="greeting-text">Hello, Student!</h1>
+                    <h1 id="greeting-text">Welcome, Student!</h1>
                     <p id="date-text">Wednesday, July 1, 2026</p>
                 </div>
-                
+
                 <!-- Daily Motivation Banner -->
                 <div class="motivation-banner">
                     <div class="motivation-icon">💡</div>
@@ -113,7 +118,7 @@
                     </div>
                     <button class="motivation-refresh-btn" id="refresh-quote-btn" title="Get new inspiration">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
                         </svg>
                     </button>
                 </div>
@@ -123,26 +128,28 @@
             <section id="dashboard" class="tab-panel active">
                 <div class="welcome-banner-card">
                     <div class="banner-info">
-                        <h2>Welcome back to Aegis! 🚀</h2>
-                        <p>Keep your focus streak going. Today is a great day to learn something new. You have tasks remaining in your active study plan.</p>
-                        <button class="btn btn-primary" onclick="switchTab('ai-explainer')">Ask Aegis AI</button>
+                        <h2>Welcome to AI Student Study Assistant 🚀</h2>
+                        <p>Manage your study schedule, track your progress, improve productivity, and learn smarter with
+                            the AI Student Study Assistant.</p>
+                        <button class="btn btn-primary" onclick="switchTab('ai-explainer')">Ask AI Assistant </button>
                     </div>
                     <div class="banner-illustration">
                         <!-- SVG graphic representing study assistant -->
-                        <svg class="floating-illustration" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:140px; height:140px;">
+                        <svg class="floating-illustration" viewBox="0 0 200 200" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="width:140px; height:140px;">
                             <defs>
                                 <linearGradient id="illGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="var(--color-primary)" />
                                     <stop offset="100%" stop-color="var(--color-secondary)" />
                                 </linearGradient>
                             </defs>
-                            <circle cx="100" cy="100" r="80" fill="url(#illGrad)" opacity="0.15"/>
+                            <circle cx="100" cy="100" r="80" fill="url(#illGrad)" opacity="0.15" />
                             <rect x="50" y="50" width="100" height="100" rx="16" fill="url(#illGrad)" opacity="0.2" />
-                            <rect x="70" y="75" width="60" height="8" rx="4" fill="var(--color-text)" opacity="0.4"/>
-                            <rect x="70" y="95" width="60" height="8" rx="4" fill="var(--color-text)" opacity="0.4"/>
-                            <rect x="70" y="115" width="40" height="8" rx="4" fill="var(--color-text)" opacity="0.4"/>
+                            <rect x="70" y="75" width="60" height="8" rx="4" fill="var(--color-text)" opacity="0.4" />
+                            <rect x="70" y="95" width="60" height="8" rx="4" fill="var(--color-text)" opacity="0.4" />
+                            <rect x="70" y="115" width="40" height="8" rx="4" fill="var(--color-text)" opacity="0.4" />
                             <circle cx="150" cy="50" r="15" fill="var(--color-accent-pink)" opacity="0.8" />
-                            <path d="M145 50 L148 53 L155 46" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M145 50 L148 53 L155 46" stroke="white" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                 </div>
@@ -198,29 +205,36 @@
                                 </svg>
                                 <div class="timer-time" id="timer-display">25:00</div>
                             </div>
-                            
+
                             <div class="timer-modes">
-                                <button class="mode-btn active" data-duration="25" onclick="setTimerMode(25, 'Focus', this)">Focus (25m)</button>
-                                <button class="mode-btn" data-duration="5" onclick="setTimerMode(5, 'Short Break', this)">Short Break (5m)</button>
-                                <button class="mode-btn" data-duration="15" onclick="setTimerMode(15, 'Long Break', this)">Long Break (15m)</button>
+                                <button class="mode-btn active" data-duration="25"
+                                    onclick="setTimerMode(25, 'Focus', this)">Focus (25m)</button>
+                                <button class="mode-btn" data-duration="5"
+                                    onclick="setTimerMode(5, 'Short Break', this)">Short Break (5m)</button>
+                                <button class="mode-btn" data-duration="15"
+                                    onclick="setTimerMode(15, 'Long Break', this)">Long Break (15m)</button>
                             </div>
 
                             <div class="timer-controls">
                                 <button class="btn btn-secondary btn-icon" id="timer-reset" onclick="resetTimer()">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                                        <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
                                     </svg>
                                 </button>
-                                <button class="btn btn-primary" id="timer-start" onclick="toggleTimer()">Start Focus</button>
-                                <button class="btn btn-secondary btn-icon" id="timer-sound" onclick="toggleTimerSound()" title="Toggle Tick Sound">
-                                    <svg class="sound-on-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                <button class="btn btn-primary" id="timer-start" onclick="toggleTimer()">Start
+                                    Focus</button>
+                                <button class="btn btn-secondary btn-icon" id="timer-sound" onclick="toggleTimerSound()"
+                                    title="Toggle Tick Sound">
+                                    <svg class="sound-on-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
                                     </svg>
-                                    <svg class="sound-off-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                                        <line x1="23" y1="9" x2="17" y2="15"/>
-                                        <line x1="17" y1="9" x2="23" y2="15"/>
+                                    <svg class="sound-off-icon hidden" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                        <line x1="23" y1="9" x2="17" y2="15" />
+                                        <line x1="17" y1="9" x2="23" y2="15" />
                                     </svg>
                                 </button>
                             </div>
@@ -238,14 +252,19 @@
                             <div class="custom-chart-container">
                                 <svg class="analytics-chart" id="analytics-chart-svg" viewBox="0 0 500 150">
                                     <!-- Dynamic Grid lines -->
-                                    <line x1="40" y1="20" x2="480" y2="20" stroke="var(--color-border)" stroke-dasharray="4" />
-                                    <line x1="40" y1="70" x2="480" y2="70" stroke="var(--color-border)" stroke-dasharray="4" />
-                                    <line x1="40" y1="120" x2="480" y2="120" stroke="var(--color-border)" stroke-dasharray="4" />
-                                    
+                                    <line x1="40" y1="20" x2="480" y2="20" stroke="var(--color-border)"
+                                        stroke-dasharray="4" />
+                                    <line x1="40" y1="70" x2="480" y2="70" stroke="var(--color-border)"
+                                        stroke-dasharray="4" />
+                                    <line x1="40" y1="120" x2="480" y2="120" stroke="var(--color-border)"
+                                        stroke-dasharray="4" />
+
                                     <!-- Dynamic elements filled by Javascript -->
-                                    <polyline id="chart-line" fill="none" stroke="url(#chartGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="40,120 113,120 186,120 260,120 333,120 406,120 480,120" />
+                                    <polyline id="chart-line" fill="none" stroke="url(#chartGrad)" stroke-width="4"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        points="40,120 113,120 186,120 260,120 333,120 406,120 480,120" />
                                     <g id="chart-points"></g>
-                                    
+
                                     <!-- X Axis Labels -->
                                     <text class="chart-text" x="40" y="140" text-anchor="middle">Mon</text>
                                     <text class="chart-text" x="113" y="140" text-anchor="middle">Tue</text>
@@ -273,22 +292,29 @@
             <section id="ai-explainer" class="tab-panel">
                 <div class="section-intro">
                     <h2>AI Concept Explainer 💬</h2>
-                    <p>Explain tough definitions, unpack complicated concepts, and answer science, math, or history topics in simple terms.</p>
+                    <p>Explain tough definitions, unpack complicated concepts, and answer science, math, or history
+                        topics in simple terms.</p>
                 </div>
-                
+
                 <div class="chat-wrapper">
                     <!-- Chat Sidebar (Previous searches / Suggestion chips) -->
                     <div class="chat-sidebar">
                         <h4>Popular Suggestions</h4>
                         <div class="suggestion-chips">
-                            <button class="chip" onclick="applySuggestion('What is Photosynthesis in plants?')">🌱 Photosynthesis</button>
-                            <button class="chip" onclick="applySuggestion('Explain the Quadratic Formula simple')">📐 Quadratic Formula</button>
-                            <button class="chip" onclick="applySuggestion('What is Gravity? Explain like I am 5')">🍎 Gravity</button>
-                            <button class="chip" onclick="applySuggestion('How does Cell Division / Mitosis work?')">🔬 Cell Division</button>
-                            <button class="chip" onclick="applySuggestion('What is Recursion in Programming?')">💻 Recursion</button>
-                            <button class="chip" onclick="applySuggestion('Explain the French Revolution causes')">🏰 French Revolution</button>
+                            <button class="chip" onclick="applySuggestion('What is Photosynthesis in plants?')">🌱
+                                Photosynthesis</button>
+                            <button class="chip" onclick="applySuggestion('Explain the Quadratic Formula simple')">📐
+                                Quadratic Formula</button>
+                            <button class="chip" onclick="applySuggestion('What is Gravity? Explain like I am 5')">🍎
+                                Gravity</button>
+                            <button class="chip" onclick="applySuggestion('How does Cell Division / Mitosis work?')">🔬
+                                Cell Division</button>
+                            <button class="chip" onclick="applySuggestion('What is Recursion in Programming?')">💻
+                                Recursion</button>
+                            <button class="chip" onclick="applySuggestion('Explain the French Revolution causes')">🏰
+                                French Revolution</button>
                         </div>
-                        
+
                         <div class="chat-options-card">
                             <h4>Explanation Mode</h4>
                             <div class="explainer-mode-options">
@@ -326,40 +352,44 @@
                             <!-- Welcome system message -->
                             <div class="message system-message">
                                 <div class="message-avatar">🤖</div>
-                                <div class="message-bubble">
-                                    <p>Hi there! I am Aegis, your AI learning assistant. Ask me anything, or click a suggestion on the left to start! You can toggle modes to get simpler explanations or deep dives.</p>
+                                <div class="message-bubble.<p>Hi there! I am your AI Student Study Assistant,ready to help you learn smarter.Ask me anything, or click a
+                                        suggestion on the left to start! You can toggle modes to get simpler
+                                        explanations or deep dives.</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Typing Indicator -->
-                        <div class="typing-indicator-container hidden" id="typing-indicator">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="typing-text">Aegis is generating your explanation...</span>
-                        </div>
+                        <div class=" typing-indicator-container hidden" id="typing-indicator">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="typing-text">AI Assistant is generating your explanation...</span>
+                                </div>
 
-                        <!-- Message Input Form -->
-                        <form class="chat-input-form" id="chat-form" onsubmit="handleChatSubmit(event)">
-                            <input type="text" id="chat-input" placeholder="Type a concept (e.g. quantum mechanics, how loops work)..." autocomplete="off" required>
-                            <button type="submit" class="btn btn-primary btn-send">
-                                <span>Send</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"/>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                                <!-- Message Input Form -->
+                                <form class="chat-input-form" id="chat-form" onsubmit="handleChatSubmit(event)">
+                                    <input type="text" id="chat-input"
+                                        placeholder="Type a concept (e.g. quantum mechanics, how loops work)..."
+                                        autocomplete="off" required>
+                                    <button type="submit" class="btn btn-primary btn-send">
+                                        <span>Send</span>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="22" y1="2" x2="11" y2="13" />
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
             </section>
 
             <!-- Study Planner -->
             <section id="study-planner" class="tab-panel">
                 <div class="section-intro">
                     <h2>Study Planner & Goals 📅</h2>
-                    <p>Create a customized weekly schedule designed around your syllabus, target dates, and daily study budget.</p>
+                    <p>Create a customized weekly schedule designed around your syllabus, target dates, and daily study
+                        budget.</p>
                 </div>
 
                 <div class="planner-layout">
@@ -369,9 +399,10 @@
                         <form id="planner-form" onsubmit="generateStudyPlan(event)">
                             <div class="form-group">
                                 <label for="plan-goal">Study Goal / Exam Target</label>
-                                <input type="text" id="plan-goal" placeholder="e.g. Pass Chemistry Final, Learn JavaScript" required>
+                                <input type="text" id="plan-goal"
+                                    placeholder="e.g. Pass Chemistry Final, Learn JavaScript" required>
                             </div>
-                            
+
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="plan-subject">Core Subject Area</label>
@@ -412,9 +443,10 @@
                     <div class="planner-card planner-output-card">
                         <div class="output-header">
                             <h3>Your Custom Plan</h3>
-                            <button class="btn btn-secondary btn-sm" id="clear-plan-btn" onclick="clearActivePlan()">Reset Plan</button>
+                            <button class="btn btn-secondary btn-sm" id="clear-plan-btn"
+                                onclick="clearActivePlan()">Reset Plan</button>
                         </div>
-                        
+
                         <div id="no-plan-view" class="empty-state">
                             <span class="empty-icon">📅</span>
                             <h4>No Active Study Plan</h4>
@@ -426,8 +458,9 @@
                                 <h4 id="active-plan-title">Plan title placeholder</h4>
                                 <span class="badge" id="active-plan-hours">2 hrs/day</span>
                             </div>
-                            <p class="plan-meta">Track your topics. Complete tasks daily to update your focus analytics stats.</p>
-                            
+                            <p class="plan-meta">Track your topics. Complete tasks daily to update your focus analytics
+                                stats.</p>
+
                             <div class="plan-timeline" id="plan-timeline-container">
                                 <!-- Filled by JavaScript -->
                             </div>
@@ -440,7 +473,8 @@
             <section id="notes-summarizer" class="tab-panel">
                 <div class="section-intro">
                     <h2>Smart Notes Summarizer 📝</h2>
-                    <p>Paste lecture materials, text documents, or book passages to generate concise notes, vocabulary lists, and active flashcards.</p>
+                    <p>Paste lecture materials, text documents, or book passages to generate concise notes, vocabulary
+                        lists, and active flashcards.</p>
                 </div>
 
                 <div class="summarizer-grid">
@@ -448,15 +482,20 @@
                     <div class="summarizer-input-card">
                         <h3>Input Material</h3>
                         <div class="form-group">
-                            <label for="summary-input">Paste Lecture, Textbook Page, or Notes (min 100 characters):</label>
-                            <textarea id="summary-input" rows="12" placeholder="Paste your text here..." required></textarea>
+                            <label for="summary-input">Paste Lecture, Textbook Page, or Notes (min 100
+                                characters):</label>
+                            <textarea id="summary-input" rows="12" placeholder="Paste your text here..."
+                                required></textarea>
                         </div>
-                        
+
                         <div class="summarizer-actions">
                             <div class="summarizer-depth-picker">
-                                <button class="btn btn-outline btn-sm active" data-depth="bullets" onclick="setSummaryDepth('bullets', this)">Bullet Points</button>
-                                <button class="btn btn-outline btn-sm" data-depth="flashcards" onclick="setSummaryDepth('flashcards', this)">Flashcards</button>
-                                <button class="btn btn-outline btn-sm" data-depth="glossary" onclick="setSummaryDepth('glossary', this)">Key Glossary</button>
+                                <button class="btn btn-outline btn-sm active" data-depth="bullets"
+                                    onclick="setSummaryDepth('bullets', this)">Bullet Points</button>
+                                <button class="btn btn-outline btn-sm" data-depth="flashcards"
+                                    onclick="setSummaryDepth('flashcards', this)">Flashcards</button>
+                                <button class="btn btn-outline btn-sm" data-depth="glossary"
+                                    onclick="setSummaryDepth('glossary', this)">Key Glossary</button>
                             </div>
                             <button class="btn btn-primary" onclick="generateSummary()">Summarize Note</button>
                         </div>
@@ -510,7 +549,8 @@
             <section id="quiz-arena" class="tab-panel">
                 <div class="section-intro">
                     <h2>Quiz Arena & Practice 🧠</h2>
-                    <p>Test your knowledge with preloaded subject pools, or paste dynamic passages to auto-generate customized practice questions.</p>
+                    <p>Test your knowledge with preloaded subject pools, or paste dynamic passages to auto-generate
+                        customized practice questions.</p>
                 </div>
 
                 <div class="quiz-layout">
@@ -518,7 +558,7 @@
                     <div id="quiz-selector-view" class="quiz-card selector-card">
                         <h3>Choose Subject Arena</h3>
                         <p class="section-sub">Select one of our core subjects to test your readiness:</p>
-                        
+
                         <div class="subject-grid">
                             <button class="subject-card" onclick="startSubjectQuiz('science')">
                                 <span class="subject-icon">🔬</span>
@@ -548,7 +588,8 @@
 
                         <div class="custom-generator-section">
                             <h4>Paste custom text to generate dynamic questions:</h4>
-                            <textarea id="custom-quiz-text" rows="5" placeholder="Paste notes or articles here (minimum 150 characters)..."></textarea>
+                            <textarea id="custom-quiz-text" rows="5"
+                                placeholder="Paste notes or articles here (minimum 150 characters)..."></textarea>
                             <button class="btn btn-outline" onclick="startCustomQuiz()">Generate Custom Quiz</button>
                         </div>
                     </div>
@@ -568,7 +609,7 @@
 
                         <div class="question-container">
                             <h3 id="quiz-question-text">Sample Question Text?</h3>
-                            
+
                             <div class="options-container" id="quiz-options-container">
                                 <!-- Option buttons will go here -->
                             </div>
@@ -578,12 +619,14 @@
                             <div class="feedback-icon" id="feedback-icon">✅</div>
                             <div class="feedback-content">
                                 <h4 id="feedback-title">Correct Answer!</h4>
-                                <p id="feedback-explanation">Explanation text goes here explaining why this is correct.</p>
+                                <p id="feedback-explanation">Explanation text goes here explaining why this is correct.
+                                </p>
                             </div>
                         </div>
 
                         <div class="gameplay-actions">
-                            <button class="btn btn-primary" id="quiz-action-btn" onclick="handleQuizAction()" disabled>Submit Answer</button>
+                            <button class="btn btn-primary" id="quiz-action-btn" onclick="handleQuizAction()"
+                                disabled>Submit Answer</button>
                         </div>
                     </div>
 
@@ -592,7 +635,7 @@
                         <div class="results-visual">🏆</div>
                         <h2>Quiz Finished!</h2>
                         <p class="results-summary">Awesome job! Here is how you performed in this arena:</p>
-                        
+
                         <div class="results-stats">
                             <div class="results-stat">
                                 <span class="res-title">Score</span>
@@ -615,18 +658,26 @@
             <section id="resource-hub" class="tab-panel">
                 <div class="section-intro">
                     <h2>Academic Resource Library 📚</h2>
-                    <p>Access high-quality study resources, reference directories, interactive web portals, and learning tools sorted by subjects.</p>
+                    <p>Access high-quality study resources, reference directories, interactive web portals, and learning
+                        tools sorted by subjects.</p>
                 </div>
 
                 <div class="resource-layout">
                     <div class="resource-filters">
-                        <input type="text" id="resource-search" placeholder="Search resources (e.g. calculator, python, history)..." oninput="filterResources()">
+                        <input type="text" id="resource-search"
+                            placeholder="Search resources (e.g. calculator, python, history)..."
+                            oninput="filterResources()">
                         <div class="filter-chips" id="resource-filter-chips">
-                            <button class="filter-chip active" data-category="all" onclick="setResourceFilter('all', this)">All Resources</button>
-                            <button class="filter-chip" data-category="science" onclick="setResourceFilter('science', this)">Sciences</button>
-                            <button class="filter-chip" data-category="math" onclick="setResourceFilter('math', this)">Mathematics</button>
-                            <button class="filter-chip" data-category="cs" onclick="setResourceFilter('cs', this)">Computer Science</button>
-                            <button class="filter-chip" data-category="tools" onclick="setResourceFilter('tools', this)">Productivity Tools</button>
+                            <button class="filter-chip active" data-category="all"
+                                onclick="setResourceFilter('all', this)">All Resources</button>
+                            <button class="filter-chip" data-category="science"
+                                onclick="setResourceFilter('science', this)">Sciences</button>
+                            <button class="filter-chip" data-category="math"
+                                onclick="setResourceFilter('math', this)">Mathematics</button>
+                            <button class="filter-chip" data-category="cs"
+                                onclick="setResourceFilter('cs', this)">Computer Science</button>
+                            <button class="filter-chip" data-category="tools"
+                                onclick="setResourceFilter('tools', this)">Productivity Tools</button>
                         </div>
                     </div>
 
@@ -637,7 +688,8 @@
             </section>
         </main>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
